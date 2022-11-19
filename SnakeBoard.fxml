@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeladder.SnakeBoardController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+
+        <ImageView fitWidth="500" fitHeight="500" layoutY="0" layoutX="300">
+            <image>
+                <Image url = "@SnakeBoardd.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitWidth="30" fitHeight="40" layoutY="300" layoutX="100">
+            <image>
+                <Image url = "@redjpg.jpg"/>
+            </image>
+        </ImageView>
+
+
+        <ImageView fitWidth="30" fitHeight="40" layoutY="350" layoutX="100">
+            <image>
+                <Image url = "@greenn.jpg"/>
+            </image>
+        </ImageView>
+
+
+        <Text layoutX="100" layoutY="290">player 1</Text>
+        <ImageView fx:id="player1" fitWidth="30" fitHeight="50" layoutY="450" layoutX="280">
+            <image>
+                <Image url = "@redjpg.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text  layoutX="100" layoutY="350">player 2</Text>
+        <ImageView  fx:id = "player2" fitWidth="20" fitHeight="50" layoutY="450" layoutX="250">
+            <image>
+                <Image url = "@greenn.jpg"/>
+            </image>
+        </ImageView>
+
+
+        <Text fx:id="turnname" layoutY="120" layoutX="100">Player 1 turn</Text>
+        <ImageView fitWidth="80" fitHeight="80" layoutY="150" layoutX="100" onMouseClicked="#rolldice">
+            <image>
+                <Image url = "@Dice.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text  fx:id = "number" layoutX="180" layoutY="200">
+        </Text>
+
+    </children>
+
+</AnchorPane>
